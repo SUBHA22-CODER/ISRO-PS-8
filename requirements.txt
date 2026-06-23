@@ -1,0 +1,48 @@
+# Core Dependencies
+fastapi==0.115.0
+uvicorn[standard]==0.30.0
+pydantic==2.9.0
+sqlalchemy==2.0.32
+aiosqlite==0.20.0
+
+# Geospatial Processing
+GDAL>=3.6.0
+rasterio>=1.3.0
+richdem>=0.3.4
+geopandas>=0.14.0
+shapely>=2.0.0
+pyproj>=3.6.0
+h5py>=3.10.0
+folium>=0.16.0
+
+# Scientific Computing
+numpy>=1.26.0
+scipy>=1.12.0
+scikit-learn>=1.4.0
+xgboost>=2.0.0
+
+# Deep Learning (CPU only — zero cost)
+torch>=2.2.0
+torchvision>=0.17.0
+
+# Evolutionary Algorithms (NSGA-II)
+deap>=1.4.0
+
+# SPICE Illumination Modelling
+spiceypy>=6.0.0
+
+# Dashboard & Visualization
+plotly>=5.18.0
+dash>=2.17.0
+dash-leaflet>=1.0.0
+dash-daq>=0.5.0
+
+# Utilities
+pyyaml>=6.0.0
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+httpx>=0.27.0
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0

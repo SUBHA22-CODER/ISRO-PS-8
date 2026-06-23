@@ -1,0 +1,47 @@
+# Pipeline Configuration — POLARIS
+# All tunable thresholds for the ice detection and mission planning pipeline
+
+# Radar Polarimetric Thresholds (Bhatt et al. 2024)
+cpr_threshold: 1.0          # CPR > this indicates volumetric scattering
+dop_max: 0.13               # DOP < this indicates depolarised subsurface scattering
+entropy_min: 0.7             # Cloude-Pottier H > this confirms random volumetric
+
+# Terrain Safety Limits (ISRO engineering standards)
+slope_max_landing: 15.0      # Maximum slope (degrees) for safe lander touchdown
+slope_max_traverse: 20.0     # Maximum slope (degrees) for rover traversal
+boulder_density_max: 50      # Maximum boulders/km² for safe passage
+roughness_max: 0.5           # Maximum RMS roughness (metres) for landing
+
+# Solar / Power Constraints
+solar_hours_min: 3.0         # Minimum direct solar hours per lunar day at landing site
+
+# Ice Volume Estimation
+penetration_depth_m: 5.0     # L-band radar penetration depth in dry regolith
+dielectric_ice: 3.15         # Dielectric constant of pure water ice at 250K
+dielectric_regolith_min: 2.7 # Apollo-calibrated dry regolith lower bound
+dielectric_regolith_max: 3.0 # Apollo-calibrated dry regolith upper bound
+monte_carlo_runs: 10000      # Number of Monte Carlo draws for P10/P50/P90
+ice_density_kg_m3: 917       # Density of water ice
+
+# ISRU Readiness Score Weights
+irs_weights:
+  ice_probability: 0.40
+  terrain_safety: 0.25
+  solar_availability: 0.20
+  proximity: 0.15
+
+# Demo Area Bounding Box (Faustini crater region)
+demo_area_bbox:
+  lat_min: -88.0
+  lat_max: -86.0
+  lon_min: 18.0
+  lon_max: 26.0
+
+# Processing Parameters
+multilook_range: 3           # Multi-look averaging in range direction
+multilook_azimuth: 3         # Multi-look averaging in azimuth direction
+tile_size: 1024              # Processing tile size in pixels
+max_api_points: 10000        # Maximum points returned per API response
+
+# Bayesian Fusion Prior
+bayesian_prior: 0.056        # P(ice) prior from LCROSS Cabeus (5.6% water)

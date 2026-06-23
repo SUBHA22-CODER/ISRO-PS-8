@@ -1,0 +1,56 @@
+# POLARIS .gitignore
+
+# Data files (large, downloaded separately)
+data/datasets/dfsar/
+data/datasets/ohrc/
+data/datasets/dem/*.tif
+data/datasets/spice/*.bsp
+data/datasets/diviner/
+data/datasets/minirf/
+data/datasets/boulders/images/
+data/datasets/boulders/masks/
+data/processed/
+data/demo/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environment
+venv/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# PyTorch models (large binaries)
+ml/models/*.pth
+ml/models/*.pt
+
+# Logs
+*.log
+pipeline.log
+
+# Jupyter
+.ipynb_checkpoints/

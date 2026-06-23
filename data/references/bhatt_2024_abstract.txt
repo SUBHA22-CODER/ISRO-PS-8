@@ -1,0 +1,23 @@
+Bhatt, M., Chauhan, P., Sarkar, S., & Mohan, S. (2024)
+
+Title: Evidence of subsurface water-ice in doubly shadowed craters of the
+       lunar south polar region from Chandrayaan-2 DFSAR data
+
+Published in: Icarus, Volume 408, Article 115825
+
+Key Findings:
+- Analysis of fully polarimetric DFSAR data reveals radar signatures consistent
+  with subsurface water ice in four doubly shadowed craters within PSRs.
+- Refined detection criterion: CPR > 1.0 AND DOP < 0.13 applied simultaneously
+  distinguishes volumetric scattering (ice) from surface scattering (rocks).
+- Strongest evidence found in a 1.1 km diameter crater within the Faustini
+  permanently shadowed region, which also displays lobate rim morphology
+  consistent with impact into ice-rich subsurface material.
+- Doubly shadowed craters maintain temperatures ~25 K (-248°C) — among the
+  coldest environments in the solar system — ideal for preserving ancient
+  volatile deposits over geological timescales.
+
+Affiliated Institution: Physical Research Laboratory (PRL), Ahmedabad, India
+                        (A unit of Department of Space, Government of India)
+
+This paper forms the scientific foundation of the POLARIS detection pipeline.
